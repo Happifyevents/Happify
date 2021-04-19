@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<title>HAPPIFY</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com"></head>
+<body>
+
+<!--navbar-->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#1">HOME</a>
+  <a href="#2">ABOUT $ SERVICES</a>
+  <a href="#3">CONTACT US</a>
+  <a href="https://bit.ly/2RJ3AzH">BOOK UR EVENTS</a>
+  <a href="https://bit.ly/3fR5qbK">FEEDBACK</a>
+</div>
+
+<span style="font-size:30px; cursor:pointer;" onclick="openNav()">
+  <img src="Images/h.png" style="width:80px;">
+  <img src="Images/h1.png" style="width: 250px;padding-left:40px; ">
+</span>
+<hr>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "300px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+
+
+<!--gallery-->
+<div id="1">
+<h2 style="text-align:center; background-color:black; color: red; padding: 15px;">Gallery</h2>
+
+<div class="slideshow">
+  <div class="mySlides1">
+    <img src="Images/2.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="Images/1.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="Images/3.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="Images/4.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="Images/5.jpeg" style="width:100%">
+  </div>
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+
+
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+<hr>
+
+
+
+
+
+<!--book-->
+<a href="https://bit.ly/2RJ3AzH"><button class="order">Book Your Events Here</button></a>
+<!--drive-->
+<a href="https://drive.google.com/folderview?id=1lJKO1cX7GZYXdsnfwC-8qscKCQpxZ-0y"><button class="drive"><span>To select theme click here</span></button></a>
+<!--review-->
+<a href="https://bit.ly/3fR5qbK"><button class="review">Review Us Here</button></a><hr>
+</div>
+
+
+
+
+
+<!--about-->
+<div id="2">
+<div class="about-section">
+  <h1>About Us</h1>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>What Are We</h2>
+        <p >Happify is a community trusted Event Management company in Bengaluru.Be it Birthday parties,baby shower,bridal shower,naming ceremonies,corporate events Happify can get it done skillfully.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Why Happify</h2>
+       <p>Happify has a good customer service and a growing community of users in Bengaluru.Happify conects people to unique events experiences, at any price point.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Our Team</h2>
+        <p>Our team holds event managers,photographers,content creators,web develepors who are very much enthusiastic in delivering a wonderful experience.</p>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+
+
+
+
+
+<!--contact-->
+<div id="3">
+<div class="contact" >
+<p class="con">Contact us</p>
+<a href="https://www.facebook.com/happify.one/" class="fa fa-facebook"></a>
+<a href="https://wa.me/message/PKJOEQ53IJVID1" class="fa fa-whatsapp"></a>
+<a href="https://instagram.com/_happify._?igshid=h3axbg0yliml" class="fa fa-instagram"></a>
+<a href="mailto:happifyevents@gmail.com" class="fa fa-envelope"></a>
+</div>
+</div>
+<hr>
+
+
+<button style="background-color: black; color:white;width:100%; padding: 10px;align-items: center;">Developed by Bhoomika L</button>
+
+
+</body>
+</html> 
